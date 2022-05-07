@@ -1,0 +1,62 @@
+﻿/* Apperarance */
+body {
+    --clr-text-primary: #fff;
+    --clr-text-secondary: #aaa;
+    --clr-bg: #000;
+}
+
+body.light {
+    --clr-text-primary: #000;
+    --clr-text-secondary: #aaa;
+    --clr-bg: #fff;
+}
+
+.clr-8 {
+    background-color: var(--clr-dark-800);
+}
+
+body.light .clr-8 {
+    background-color: var(--clr-light-800);
+}
+
+.clr-7 {
+    background-color: var(--clr-dark-700);
+}
+
+body.light .clr-7 {
+    background-color: var(--clr-light-700);
+}
+
+.clr-6 {
+    background-color: var(--clr-dark-600);
+}
+
+body.light .clr-6 {
+    background-color: var(--clr-100);
+}
+
+.clr-5 {
+    background-color: var(--clr-dark-500);
+}
+
+body.light .clr-5 {
+    background-color: var(--clr-100);
+}
+
+.clr-4 {
+    background-color: var(--clr-dark-400);
+}
+
+body.light .clr-4 {
+    background-color: var(--clr-100);
+}
+
+/* Custom Classes */
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
