@@ -1,0 +1,48 @@
+﻿@using Youtube.Enums
+@using Youtube.Shared.ButtonComponent
+@using Youtube.Shared.IconButtonComponent
+@inherits AppComponent
+@inject IJSRuntime _jsRuntime;
+
+<div class="@("yt-menu btn " + Class)" 
+        data-id="@(i)"
+        data-anchorOrigin="@Enum.GetName(AnchorOrigin)"
+        data-transformOrigin="@Enum.GetName(TransformOrigin)">
+    <label for="@($"menu-cb-{i}")" class="yt-menu__button-box clickable @ButtonClass">
+        <IconButton Class="yt-menu__btn">
+            @MenuButton
+        </IconButton>
+    </label>
+
+    <input type="checkbox" name="@($"menu-cb-{i}")" id="@($"menu-cb-{i}")" class="yt-menu__checkbox" />
+
+    <div class="@("yt-menu__content clr-7 " + $" {ContentClass}")">
+        @ChildContent
+    </div>
+</div>
+
+@code {
+    private string i = Guid.NewGuid().ToString();
+
+    [Parameter]
+    public string ButtonClass { get; set; } = "";
+
+    [Parameter]
+    public string ContentClass { get; set; } = "";
+
+    [Parameter]
+    public RenderFragment MenuButton { get; set; }
+
+    [Parameter]
+    public Origin AnchorOrigin { get; set; } = Origin.BottomRight;
+
+    [Parameter]
+    public Origin TransformOrigin { get; set; } = Origin.TopRight;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await base.OnAfterRenderAsync(firstRender);
+
+        await _jsRuntime.InvokeVoidAsync("handleClickOutsideMenu", i);
+    }
+}

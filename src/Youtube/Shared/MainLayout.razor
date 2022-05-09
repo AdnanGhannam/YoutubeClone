@@ -1,8 +1,18 @@
-﻿@inherits LayoutComponentBase
+﻿@using Youtube.Shared.NavbarComponent
+@using Youtube.Shared.SidebarComponent
+@inherits LayoutComponentBase
 
 <PageTitle>YouTube</PageTitle>
 
 <div class="page">
+    <div class="page-navbar">
+        <Navbar />
+    </div>
+
+    <div class="page-sidebar">
+        <Sidebar />
+    </div>
+
     <main class="page-body">
         @Body
     </main>

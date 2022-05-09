@@ -5,8 +5,16 @@
     box-sizing: border-box;
 }
 
-
 body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
@@ -26,7 +34,8 @@ input[type="text"] {
     color: inherit;
     border: 1px solid #1f1f1f;
     display: block;
-    padding: .5em 1em;
+    padding: .5em .7em;
+    font: inherit;
 }
 
 input[type="text"]:focus {
@@ -43,7 +52,13 @@ button {
     border: 1px solid #1f1f1f;
     border-radius: 0px;
     background-color: inherit;
+    font: inherit;
     color: inherit;
+    fill: inherit;
     cursor: pointer;
 }
 
+svg {
+    display: block;
+    fill: inherit;
+}

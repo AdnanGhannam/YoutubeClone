@@ -1,0 +1,12 @@
+﻿@inherits AppComponent
+
+<div class="@($"yt-icon-btn { Class }")" @onclick="OnClick">
+    <span class="yt-icon-btn__content">
+        @ChildContent
+    </span>
+</div>
+
+@code {
+    [Parameter]
+    public EventCallback<MouseEventArgs> OnClick { get; set; }
+}

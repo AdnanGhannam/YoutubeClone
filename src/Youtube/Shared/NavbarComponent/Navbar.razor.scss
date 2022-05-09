@@ -1,0 +1,24 @@
+﻿@import "../Styles/mixins.scss";
+
+.navbar {
+    &__container {
+        @include flex(space-between);
+    }
+
+    &__left {
+        @include flex(flex-start);
+    }
+
+    &__center {
+    }
+
+    &__right {
+        &__list {
+            @include flex();
+
+            ::deep .list-btn {
+                font-size: 1.2em;
+            }
+        }
+    }
+}

@@ -1,23 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2C9B71BF-BF40-4103-A5FE-7528E89E7020}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Youtube", "src\Youtube\Youtube.csproj", "{EA3AEAFD-B199-4804-A852-2373132766DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Youtube", "src\Youtube\Youtube.csproj", "{EA3AEAFD-B199-4804-A852-2373132766DA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7E88B20E-85C8-45F8-BE4F-F56EF4DEC4F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Youtube.UnitTests", "tests\Youtube.UnitTests\Youtube.UnitTests.csproj", "{9655B05C-FE37-43C3-A593-B5E64BBC34F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Youtube.UnitTests", "tests\Youtube.UnitTests\Youtube.UnitTests.csproj", "{9655B05C-FE37-43C3-A593-B5E64BBC34F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{EA3AEAFD-B199-4804-A852-2373132766DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -29,8 +26,14 @@ Global
 		{9655B05C-FE37-43C3-A593-B5E64BBC34F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9655B05C-FE37-43C3-A593-B5E64BBC34F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EA3AEAFD-B199-4804-A852-2373132766DA} = {2C9B71BF-BF40-4103-A5FE-7528E89E7020}
 		{9655B05C-FE37-43C3-A593-B5E64BBC34F2} = {7E88B20E-85C8-45F8-BE4F-F56EF4DEC4F0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BC3824B-66C1-4861-A79C-490AFCFDE633}
 	EndGlobalSection
 EndGlobal

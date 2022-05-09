@@ -60,3 +60,23 @@ body.light .clr-4 {
     text-transform: lowercase;
 }
 
+.container {
+    padding: 0 1em;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: var(--btn-padding);
+}
+
+.bi {
+    font-size: 1.2em;
+}
+
+.yt-svg {
+    pointer-events: none; 
+    display: block; 
+    width: 1.5em; 
+    height: 1.5em;
+}

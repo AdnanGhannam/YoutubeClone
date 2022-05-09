@@ -1,0 +1,24 @@
+﻿@import "../Styles/mixins.scss";
+
+.yt-icon-btn {
+    $size: 40px;
+    position: relative;
+    width: $size;
+    height: $size;
+    padding: var(--btn-padding);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color .3s ease-out, border-color .5s ease-out;
+
+    &:active {
+        background-color: var(--clr-dark-500);
+        border-color: var(--clr-dark-400);
+        transition: background-color 0s, border-color 0s;
+    }
+
+    &__content {
+        @include absolute(50%, auto, auto, 50%, -50%, -50%);
+        display: inline-block;
+    }
+}
