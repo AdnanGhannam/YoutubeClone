@@ -1,0 +1,46 @@
+﻿@import "../Styles/mixins.scss";
+
+.multi-list {
+    $m: .7em;
+    font-size: .9em;
+
+    ::deep &-item {
+        user-select: none;
+
+        &:hover {
+            background-color: var(--clr-dark-600);
+        }
+
+        &:first-child {
+            margin-top: $m;
+        }
+
+        &:last-child {
+            margin-bottom: $m;
+        }
+
+        &__link {
+            @include flex();
+            padding: .7em 1em;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        &__icon {
+            margin-right: .8em;
+        }
+
+        &__content {
+            flex: 1;
+            white-space: nowrap;
+        }
+    }
+
+    ::deep .line {
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        margin: $m 0;
+        background-color: var(--clr-dark-600);
+    }
+}

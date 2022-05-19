@@ -9,6 +9,7 @@ body.light {
     --clr-text-primary: #000;
     --clr-text-secondary: #aaa;
     --clr-bg: #fff;
+    --clr-border: #1f1f1f;
 }
 
 .clr-8 {

@@ -2,6 +2,7 @@
 
 .yt-menu {
     position: relative;
+    padding: 0 var(--btn-padding);
 
     &__checkbox {
         display: none;

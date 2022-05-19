@@ -10,6 +10,8 @@
     }
 
     &__center {
+        @include flex();
+        flex: 1;
     }
 
     &__right {

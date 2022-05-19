@@ -1,0 +1,29 @@
+﻿@inherits AppComponent
+
+<li class="@($"multi-list-item { Class }")">
+    <NavLink href="@Href" class="multi-list-item__link">
+        <span class="multi-list-item__icon">
+            @Icon
+        </span>
+        <span class="multi-list-item__content">
+            @ChildContent
+        </span>
+    </NavLink>
+</li>
+
+@if (IsLast)
+{
+    <span class="line"></span>
+}
+
+
+@code {
+    [Parameter]
+    public RenderFragment Icon { get; set; }
+
+    [Parameter]
+    public bool IsLast { get; set; } = false;
+
+    [Parameter]
+    public string? Href { get; set; }
+}

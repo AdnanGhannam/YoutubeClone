@@ -15,10 +15,11 @@
     --clr-100: #ffffff;
     --clr-border: #383838;
     --clr-blue: #0060df;
+    --clr-red: #bf360c;
     /* Fonts */
     --ff-primary: 'Roboto', sans-serif;
     /* Sizing */
-    --btn-padding: .5em;
+    --btn-padding: .4em;
 }
 
 body {

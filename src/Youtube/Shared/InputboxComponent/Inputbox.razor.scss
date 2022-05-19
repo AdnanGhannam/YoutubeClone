@@ -3,10 +3,21 @@
 .yt-form {
     @include flex(center, stretch);
     position: relative;
+    width: 100%;
     max-width: 630px;
 
     &.start {
         flex-direction: row-reverse;
+
+        .yt-form__input {
+            border-left-width: 0px; 
+        }
+    }
+
+    &.end {
+        .yt-form__input {
+            border-right-width: 0px; 
+        }
     }
 
     &__input-box {
@@ -21,6 +32,7 @@
         width: 100%;
         height: 100%;
         opacity: .9;
+        border: 1px solid var(--clr-border);
     }
 
     &__icon-box {
